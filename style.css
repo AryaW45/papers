@@ -1,0 +1,102 @@
+/* General Reset and Font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #ddd;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  padding: 2em 1em;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+h1 {
+  font-size: 2.4em;
+  color: #eee;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Paper section as a card */
+.paper {
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 1.5em 2em;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.paper:hover {
+  transform: scale(1.01);
+}
+
+.paper h2 {
+  color: #ccc;
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+/* Link buttons */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ccc;
+  background-color: #222;
+  border: 1px solid #333;
+  padding: 0.5em 1.2em;
+  border-radius: 5px;
+  font-size: 0.95em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.links a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .paper {
+    padding: 1.2em;
+  }
+
+  .links a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
